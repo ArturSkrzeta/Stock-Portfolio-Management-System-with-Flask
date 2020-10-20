@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Portfolio Artur Skrzeta</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><a href="https://arturskrzeta.github.io/"><img src="images/avatar.png" alt="" style="margin-bottom:0px;"/></a></span>
+					<h1 id="logo"><a href="https://arturskrzeta.github.io/">Artur Skrzeta</a></h1>
+					<p>Data Analyst<br />
+					+4 years experience</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="#one" class="active">Intro</a></li>
+						<li><a href="#two">Features</a></li>
+						<li><a href="#three">Demo</a></li>
+						<li><a href="#four">Setup</a></li>
+						<li><a href="#five">Source Code</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/artur-skrz%C4%99ta-010b23187/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://www.instagram.com/arturskrrr/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://github.com/ArturSkrzeta" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="mailto: arturskrzeta@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="container">
+									<header class="major">
+										<h2>Smart Contracts on Blockchain</h2>
+										<h3>Intro</h3>
+										<p>Application makes usage of blockchain's security mechanism to store and keep track of contracts insertion.
+											Each contract insertion to the system leaves tracks to the contract that was inserted before.
+											This mechanism prevents users from modifying contract that was inserted before current one.</p>
+										<p>Application features:</p>
+										<ul>
+											<li>Flask back-end.</li>
+											<li>Pure HTML and CSS layout.</li>
+											<li>JavaScript elements.</li>
+											<li>Dynamic html template content with Flask variables and database queries.</li>
+										<ul>
+									</header>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two">
+								<div class="container">
+									<h3>Features</h3>
+									<p>App includes following features:</p>
+									<ul class="feature-icons">
+										<li class="icon solid fa-check">Flask</li>
+										<li class="icon solid fa-check">CSS</li>
+										<li class="icon solid fa-check">HTML</li>
+										<li class="icon solid fa-check">ORM</li>
+									</ul>
+								</div>
+							</section>
+
+						<!-- Three -->
+							<section id="three">
+								<div class="container">
+									<h3>Demo</h3>
+									<p>Application:</p>
+									<img src="images/app.JPG" width="780">
+									<ul>
+										<li>Application uses blockchain infrastructure visualization.</li>
+										<li>We treat blocks within a blockchain as a single contract.</li>
+										<li>Each following contract is related with a previous one.</li>
+										<li>This kind of relation secures individual contract from being changed.</li>
+									</ul>
+									<p>Contract insertion:</p>
+									<img src="images/blockchain-app.gif" width="780">
+									<p>Database:</p>
+									<img src="images/db.JPG" width="700">
+									<ul>
+										<li>We can see the structure of block table where the contract's <b>previous_hash</b> equals to <b>contracts_so_fat_hashed</b> of the preceding contract.</li>
+										<li>Column <b>contracts_so_fat_hashed</b> consists of all of the contracts info that were inserted so far.</li>
+										<li>The change of one contract inserted before would affect the values of <b>contracts_so_fat_hashed</b> for all contracts ahead.</li>
+										<li>This is one of security mechanizm of blockchain that prevents from undesirable data modification.</li>
+									</ul>
+								</div>
+							</section>
+
+						<!-- Four -->
+							<section id="four">
+								<div class="container">
+									<h3>Setup</h3>
+									<p>Python library installation required:</p>
+									<ul>
+										<li>pip install flask</li>
+										<li>pip install flask-sqlalchemy</li>
+										<li>pip install flask-wtf</li>
+									</ul>
+								</div>
+							</section>
+
+						<!-- Five -->
+							<section id="five">
+								<div class="container">
+									<h3>Source Code</h3>
+									<p>You can view the source code: <a href="https://github.com/ArturSkrzeta/Desk-Booking-App/tree/main/project">HERE</a></p>
+									<p>&nbsp</p>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<a href="https://arturskrzeta.github.io/" style="padding-bottom:10px;">Back to Portfolio</a>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
