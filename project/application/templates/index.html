@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+
+	<head>
+		<title>Phantom by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script>
+			var check = false;
+		</script>
+	</head>
+	<body>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+							<!-- Logo -->
+							<span class="icon regular fa-chart-bar" style="margin-right:15px; font-size:20px;"></span><span style="font-size:15px; font-family:arial; letter-spacing: 1.5px;">Stock Portfolio Management System</span>
+
+						</div>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<p>New Stock</p>
+							<form action="#" method="POST">
+								{{ form.company(placeholder="Company", autocomplete="off") }}
+								{{ form.open(placeholder="Open (dd/mm/yyyy)", autocomplete="off") }}
+								{{ form.price(placeholder="Price", autocomplete="off") }}
+								{{ form.quantity(placeholder="Quantity", autocomplete="off") }}
+								{{ form.commission(placeholder="Commission", autocomplete="off") }}
+								{{ form.signal(placeholder="Signal", autocomplete="off") }}
+								{{ form.close(placeholder="Close (dd/mm/yyyy)", autocomplete="off") }}
+								{{ form.roi(placeholder="ROI", autocomplete="off") }}
+								{{ form.comments(placeholder="Comments", autocomplete="off") }}
+								{{ form.enter }}
+							</form>
+
+							<section class="tiles" style="margin-top:30px;">
+								<p>Portfolio</p>
+								<table>
+
+									<tr>
+										<th>Company</th>
+										<th>Open Date</th>
+										<th>Price</th>
+										<th>Quantity</th>
+										<th>Commission</th>
+										<th>Signal</th>
+										<th>Close Date</th>
+										<th>ROI</th>
+										<th>Comments</th>
+									</tr>
+									{% for stock in stocks %}
+										<tr>
+												<td>{{ stock.company }}</td>
+												<td>{{ stock.open }}</td>
+												<td>{{ stock.price }}</td>
+												<td>{{ stock.quantity }}</td>
+												<td>{{ stock.commission }}</td>
+												<td>{{ stock.signal }}</td>
+												<td>{{ stock.close }}</td>
+												<td>{{ stock.roi }}</td>
+												<td>{{ stock.comments }}</td>
+										</tr>
+									{% endfor %}
+								</table>
+
+
+
+							</section>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+							<p>&copy; Stock Portfolio Management System</p>
+					</footer>
+
+			</div>
+
+			<script>
+
+
+			</script>
+
+		<!-- Scripts -->
+			<script src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='browser.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='breakpoints.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='util.js') }}"></script>
+			<script src="{{ url_for('static', filename='main.js') }}"></script>
+
+	</body>
+</html>
